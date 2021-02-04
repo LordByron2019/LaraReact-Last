@@ -1,10 +1,9 @@
 import React from 'react'
 import Layout from './Layouts/App'
 import {InertiaLink, usePage} from "@inertiajs/inertia-react"
-import Pagination from "../Shared/Pagination";
+import Pagination from "../Shared/Pagination"
 
 export default function Welcome({ contacts }) {
-    const {links} = contacts
     return (
         <Layout title="Contact">
             <h1 className="my-5 p-5 text-white text-4xl">Tous les contacts</h1>
@@ -34,7 +33,7 @@ export default function Welcome({ contacts }) {
                             Actions
                         </th>
                     </thead>
-                    {contacts.map(contact =>
+                    {contacts.data.map(contact =>
                     <tbody className="table-row-group bg-blue-100 border-2 border-blue-50">
                         <tr key={contact.id}>
                             <td className="border-l-2 border-blue-50">
@@ -62,7 +61,7 @@ export default function Welcome({ contacts }) {
                     </tbody>
                     )}
                     </table>
-                <Pagination links={links} />
+                <Pagination links={contacts.links} />
             </div>
         </Layout>
     )

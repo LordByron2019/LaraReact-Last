@@ -17,21 +17,16 @@ class ContactController extends Controller
      */
     public function index()
     {
-        $contacts = Contact::all();
+        $contacts = Contact::paginate(5);
+
+        //dd($contacts->links());
+
+        /*return Inertia::render('Contact', [
+            'contacts' => $contacts
+        ]);*/
 
         return Inertia::render('Contact', [
-            'contacts' => $contacts->map(function($contact){
-                return [
-                    'id' => $contact->id,
-                    'name' => $contact->name,
-                    'phone_number' => $contact->phone_number,
-                    'indicatif' => $contact->indicatif,
-                    'city' => $contact->city,
-                    'country' => $contact->country,
-                    'sex' => $contact->sex,
-                    'edit_url' => route('contact.show', [$contact]),
-                ];
-                })
+            'contacts' => $contacts
         ]);
     }
 

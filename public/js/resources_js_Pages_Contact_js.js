@@ -24,7 +24,6 @@ __webpack_require__.r(__webpack_exports__);
 
 function Welcome(_ref) {
   var contacts = _ref.contacts;
-  var links = contacts.links;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_Layouts_App__WEBPACK_IMPORTED_MODULE_2__.default, {
     title: "Contact",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
@@ -58,7 +57,7 @@ function Welcome(_ref) {
             className: "table-cell border-l-2 border-blue-50 text-center",
             children: "Actions"
           })]
-        }), contacts.map(function (contact) {
+        }), contacts.data.map(function (contact) {
           return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("tbody", {
             className: "table-row-group bg-blue-100 border-2 border-blue-50",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
@@ -92,7 +91,7 @@ function Welcome(_ref) {
           });
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Shared_Pagination__WEBPACK_IMPORTED_MODULE_4__.default, {
-        links: links
+        links: contacts.links
       })]
     })]
   });
