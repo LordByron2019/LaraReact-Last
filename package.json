@@ -32,6 +32,7 @@
         "classnames": "^2.2.6",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
-        "react-laravel-paginex": "^2.0.8"
+        "react-laravel-paginex": "^2.0.8",
+        "ziggy": "^2.4.0"
     }
 }

@@ -3,6 +3,7 @@ import Layout from './Layouts/App'
 import {InertiaLink, usePage} from "@inertiajs/inertia-react"
 import Pagination from "../Shared/Pagination"
 
+
 export default function Welcome({ contacts }) {
     return (
         <Layout title="Contact">
@@ -55,13 +56,15 @@ export default function Welcome({ contacts }) {
                                 {contact.sex}
                             </td>
                             <td className="border-l-2 border-blue-50 text-center my-2 py-2 text-white text-xl">
-                                <InertiaLink href={contact.edit_url} className="my-2 py-2 px-4 bg-blue-500 border rounded border-black hover:bg-gray-400">Edit</InertiaLink>
+                                <InertiaLink href={'contact/' + contact.id} className="my-2 py-2 px-4 bg-blue-500 border rounded border-black hover:bg-gray-400">Edit</InertiaLink>
                             </td>
                         </tr>
                     </tbody>
                     )}
                     </table>
-                <Pagination links={contacts.links} />
+                <div className="flex justify-center">
+                    <Pagination links={contacts.links} />
+                </div>
             </div>
         </Layout>
     )

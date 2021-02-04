@@ -82,7 +82,7 @@ function Welcome(_ref) {
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("td", {
                 className: "border-l-2 border-blue-50 text-center my-2 py-2 text-white text-xl",
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_3__.InertiaLink, {
-                  href: contact.edit_url,
+                  href: 'contact/' + contact.id,
                   className: "my-2 py-2 px-4 bg-blue-500 border rounded border-black hover:bg-gray-400",
                   children: "Edit"
                 })
@@ -90,8 +90,11 @@ function Welcome(_ref) {
             }, contact.id)
           });
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Shared_Pagination__WEBPACK_IMPORTED_MODULE_4__.default, {
-        links: contacts.links
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        className: "flex justify-center",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Shared_Pagination__WEBPACK_IMPORTED_MODULE_4__.default, {
+          links: contacts.links
+        })
       })]
     })]
   });
@@ -174,8 +177,8 @@ var PageLink = function PageLink(_ref) {
   var active = _ref.active,
       label = _ref.label,
       url = _ref.url;
-  var className = classnames__WEBPACK_IMPORTED_MODULE_3___default()(['mr-1 mb-1', 'px-4 py-3', 'border rounded', 'text-sm', 'hover:bg-white', 'focus:border-indigo-700 focus:text-indigo-700'], {
-    'bg-white': active,
+  var className = classnames__WEBPACK_IMPORTED_MODULE_3___default()(['mr-1 mb-1', 'px-4 py-3', 'border rounded', 'text-sm', 'hover:bg-blue-100', 'focus:border-indigo-700 focus:text-indigo-700'], {
+    'bg-blue-100': active,
     'ml-auto': label === 'Next'
   });
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {

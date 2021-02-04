@@ -9,11 +9,11 @@ const PageLink = ({ active, label, url }) => {
             'px-4 py-3',
             'border rounded',
             'text-sm',
-            'hover:bg-white',
+            'hover:bg-blue-100',
             'focus:border-indigo-700 focus:text-indigo-700'
         ],
         {
-            'bg-white': active,
+            'bg-blue-100': active,
             'ml-auto': label === 'Next'
         }
     );

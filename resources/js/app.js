@@ -6,8 +6,11 @@ import { App } from '@inertiajs/inertia-react'
 import React from 'react'
 import { render } from 'react-dom'
 import { InertiaProgress } from '@inertiajs/progress'
+import route from './ziggy'
+import { Ziggy } from './ziggy';
 
 InertiaProgress.init()
+
 
 const el = document.getElementById('app')
 

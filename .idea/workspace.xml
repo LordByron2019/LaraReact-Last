@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70179496-3911-4ff9-8a3b-f550fd1f40e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/resources_js_Pages_Contact_js_.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/Shared/PageLink.js" afterDir="false" />
+    <list default="true" id="70179496-3911-4ff9-8a3b-f550fd1f40e5" name="Default Changelist" comment="Pagination">
+      <change afterPath="$PROJECT_DIR$/resources/js/ziggy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LaraReact-Last.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LaraReact-Last.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/resources_js_Pages_Contact_js.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/resources_js_Pages_Contact_js.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Pages/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Shared/Pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Shared/Pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +139,7 @@
       <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
       <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
       <path value="$PROJECT_DIR$/vendor/laravel/breeze" />
+      <path value="$PROJECT_DIR$/vendor/tightenco/ziggy" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ntFyv1bNxx2pVr8nBiEtZ2Uvel" />
@@ -197,8 +203,16 @@
       <updated>1612201738675</updated>
       <workItem from="1612201741513" duration="15977000" />
       <workItem from="1612321032376" duration="13513000" />
-      <workItem from="1612408928278" duration="14713000" />
+      <workItem from="1612408928278" duration="17298000" />
     </task>
+    <task id="LOCAL-00001" summary="Pagination">
+      <created>1612477594174</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612477594174</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,5 +220,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pagination" />
   </component>
 </project>
